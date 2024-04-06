@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    tools:context=".CustomerFoofPanel_BottomNavigation">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dine-In Booking"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="90sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:layout_marginTop="230dp"/>
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:inputType="date"
+        android:layout_marginTop="280dp"/>
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Time (HH:MM AM/PM)"
+        android:inputType="time"/>
+
+    <EditText
+        android:id="@+id/guestsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeEditText"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="Number of Guests"
+        android:textColorHint="@color/white"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/bookTableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guestsEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Book Table"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_above="@id/bottom_navigation"/>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:backgroundTint="@color/white"
+        app:itemIconTint="@color/menu_item_color"
+        app:itemTextColor="@color/menu_item_color"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/customer_bottom_navigation"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

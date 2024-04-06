@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "952470636560",
+    "firebase_url": "https://foodyapp-eb235-default-rtdb.firebaseio.com",
+    "project_id": "foodyapp-eb235",
+    "storage_bucket": "foodyapp-eb235.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952470636560:android:8dd7c5c6d3bb38b9d82295",
+        "android_client_info": {
+          "package_name": "com.example.foodyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ6SbT1Cmm6l6ZLAS2-Ck2w9a0JkETmHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
